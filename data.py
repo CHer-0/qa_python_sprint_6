@@ -16,30 +16,30 @@ class Accordeon:
 
 
 class OrderButtons:
-    buttons = [[MainLocators.ORDER_BUTTON_TOP, 0], [MainLocators.ORDER_BUTTON_BOTTOM, 1]]
+    buttons = [MainLocators.ORDER_BUTTON_TOP, MainLocators.ORDER_BUTTON_BOTTOM]
 
 
 class FirstScenario:
-    NAME = 'Иван'
-    SURNAME = 'Иванов'
-    ADRES = 'Нижний Новгород'
-    METRO = 'Комсомольская'
-    TELEPHONE = '89012345678'
-
-    HOWLONG = 'FOR_HOW_LONG_1'
-    HOWLONG_TEXT = 'сутки'
-    COLOUR = 'black'
-    COMMENT = ''
+    FIELDS = {
+        'NAME': 'Иван',
+        'SURNAME': 'Иванов',
+        'ADRES': 'Нижний Новгород',
+        'METRO': 'Комсомольская',
+        'TELEPHONE': '89012345678',
+        'HOWLONG_TEXT': 'сутки',
+        'COLOUR': 'black',
+        'COMMENT': ''
+    }
 
 
 class SecondScenario:
-    NAME = 'Мария'
-    SURNAME = 'Петрова'
-    ADRES = 'Ближнее Замкадье'
-    METRO = 'Нижегородская'
-    TELEPHONE = '22233322233'
-
-    HOWLONG = 'FOR_HOW_LONG_2'
-    HOWLONG_TEXT = 'двое суток'
-    COLOUR = 'grey'
-    COMMENT = 'Дорогой курьер! Я дождусь, не торопись.'
+    FIELDS = {
+        'NAME': 'Мария',
+        'SURNAME': 'Петрова',
+        'ADRES': 'Ближнее Замкадье',
+        'METRO': 'Нижегородская',
+        'TELEPHONE': '22233322233',
+        'HOWLONG_TEXT': 'двое суток',
+        'COLOUR': 'grey',
+        'COMMENT': 'Дорогой курьер! Я дождусь, не торопись.'
+    }

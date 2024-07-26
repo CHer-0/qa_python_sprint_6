@@ -18,10 +18,9 @@ class TestMainPage:
         assert result == expected_answer
 
     @allure.title('Проверка перехода с главной формы по 2 кнопкам "Заказать"')
-    @pytest.mark.parametrize("button, n", OrderButtons.buttons)
-    def test_order_buttons(self, main_page, button, n):
-        if n == 1:
-            main_page.prepare_main()
+    @pytest.mark.parametrize("button", OrderButtons.buttons)
+    def test_order_buttons(self, main_page, button):
+        main_page.dem_cookies()
         main_page.click_on_element(button)
         assert main_page.get_url() == Urls.URL_ORDER
 
